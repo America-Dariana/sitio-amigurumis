@@ -44,3 +44,24 @@ body, html {
     line-height: 1.6;
     margin-bottom: 30px;
 }
+
+#carouselMultiple .carousel-inner {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+#carouselMultiple .carousel-item {
+    display: block !important; 
+    flex: 0 0 calc(33.333% - 0.66rem);
+    margin-right: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+#carouselMultiple .carousel-item img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Segun yo segui un tutorial y.. no me salio, no me gusto como me quedo ToT . Voy a buscar otra manera de hacerlo.. */
