@@ -45,23 +45,39 @@ body, html {
     margin-bottom: 30px;
 }
 
-#carouselMultiple .carousel-inner {
+.carrusel-galeria {
     display: flex;
     gap: 1rem;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
 }
 
-#carouselMultiple .carousel-item {
-    display: block !important; 
+.carrusel-galeria::-webkit-scrollbar {
+    height: 6px;
+}
+
+.carrusel-galeria::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.tarjeta-carrusel {
     flex: 0 0 calc(33.333% - 0.66rem);
-    margin-right: 0;
-    transition: transform 0.4s ease-in-out;
+    scroll-snap-align: start;
 }
 
-#carouselMultiple .carousel-item img {
+.tarjeta-carrusel img {
+    width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 16px;
+    display: block;
 }
 
-/* Segun yo segui un tutorial y.. no me salio, no me gusto como me quedo ToT . Voy a buscar otra manera de hacerlo.. */
+@media (max-width: 768px) {
+    .tarjeta-carrusel {
+        flex: 0 0 calc(80% - 0.5rem);
+    }
+}
+/* nose.. bueno, con esto ya no se usa las flechas, se usa una barra, no era lo que queria desde el principio pero me gusta :D */
