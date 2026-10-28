@@ -178,3 +178,89 @@ footer {
 .btn-comprar:hover {
     background-color: #3b1d25;
 }
+
+.contenedor-nosotros {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #9C77BE; /* Lila de tu paleta */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.fila-nosotros {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #f0e6df;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    gap: 20px;
+}
+
+.caja-imagen img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.caja-texto {
+    flex: 1;
+}
+
+.caja-texto h3 {
+    font-family: 'Georgia', serif;
+    color: #3b1d25; /* Rojo vino */
+    margin-bottom: 8px;
+}
+
+.caja-texto p {
+    color: #2C2C2C;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.texto-oculto {
+    display: none; 
+    margin-top: 10px;
+    color: #555;
+    animation: fadeIn 0.5s ease;
+}
+
+.btn-leer {
+    color: #9C77BE;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.btn-leer:hover {
+    color: #3b1d25;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .fila-nosotros {
+        flex-direction: column;
+        text-align: center;
+    }
+    .caja-imagen img {
+        width: 100%;
+        height: 200px;
+    }
+}
