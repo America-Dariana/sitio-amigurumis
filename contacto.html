@@ -17,8 +17,29 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
+    <main style="padding: 30px; text-align: center;">
+        <h2>Contacto y Pedidos</h2>
+        <p>Escríbenos para realizar un pedido personalizado o resolver tus dudas. :D</p>
+        <div style="display: flex; justify-content: center;">
+            <form id="formulario">
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                    <label for="cel">Celular (10 dígitos):</label>
+                    <input type="tel" id="cel" name="cel" placeholder="7711234567">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje o pedido..."></textarea>
+                    <input type="submit" value="Enviar formulario">
+                    <div id="respuesta"></div>
+                </div>
+            </form>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2026 Amigurumis YENI</p>
     </footer>
+    <script src="funtion.js"></script>
 </body>
 </html>
