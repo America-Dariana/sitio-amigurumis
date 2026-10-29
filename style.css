@@ -433,6 +433,15 @@ button[type="submit"]:hover {
     }
 }
 
+h1, h2, h3 {
+    font-family: 'Fredoka', 'Arial', sans-serif;
+}
+
+.btn-comprar,
+button[type="submit"] {
+    font-family: 'Fredoka', 'Arial', sans-serif;
+}
+
 footer {
     background-color: #3b1d25;
     color: white;
